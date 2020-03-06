@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1E725240-39C2-4B73-8B70-09D81B1D7A92}</ProjectGuid>
+    <RootNamespace>Labs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Input.h" />
+    <ClInclude Include="Common\Main.h" />
+    <ClInclude Include="Lab1\ArrayHeader.h" />
+    <ClInclude Include="Lab1\Lab1Main.h" />
+    <ClInclude Include="Lab2\Lab2Main.h" />
+    <ClInclude Include="Lab2\List.h" />
+    <ClInclude Include="Lab3\BufferNode.h" />
+    <ClInclude Include="Lab3\CircleBuffer.h" />
+    <ClInclude Include="Lab3\CircleBufferQueue.h" />
+    <ClInclude Include="Lab3\Lab3Main.h" />
+    <ClInclude Include="Lab3\Lab3Output.h" />
+    <ClInclude Include="Lab3\RingBuffer.h" />
+    <ClInclude Include="Lab3\RingBufferQueue.h" />
+    <ClInclude Include="Lab3\Stack.h" />
+    <ClInclude Include="Lab3\StackQueue.h" />
+    <ClInclude Include="Lab4\Dictionary.h" />
+    <ClInclude Include="Lab4\HashTable.h" />
+    <ClInclude Include="Lab4\Lab4Main.h" />
+    <ClInclude Include="Lab4\List.h" />
+    <ClInclude Include="Lab4\Lab4Menu.h" />
+    <ClInclude Include="Lab4\Node.h" />
+    <ClInclude Include="Lab4\Lab4Output.h" />
+    <ClInclude Include="Lab5\BinaryTree.h" />
+    <ClInclude Include="Lab5\BinaryTreeNode.h" />
+    <ClInclude Include="Lab5\Lab5Main.h" />
+    <ClInclude Include="Lab5\Lab5Menu.h" />
+    <ClInclude Include="Lab5\Lab5Output.h" />
+    <ClInclude Include="Lab5\Treap.h" />
+    <ClInclude Include="Lab5\TreapNode.h" />
+    <ClInclude Include="Lab6\AVLtree.h" />
+    <ClInclude Include="Lab6\Lab6Main.h" />
+    <ClInclude Include="Lab6\Lab6Menu.h" />
+    <ClInclude Include="Lab6\Node.h" />
+    <ClInclude Include="Lab6\Lab6Output.h" />
+    <ClInclude Include="Lab6\RBTNode.h" />
+    <ClInclude Include="Lab6\RedBlackTree.h" />
+    <ClInclude Include="Menus\MainMenu.h" />
+    <ClInclude Include="PrintMainMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\Input.cpp" />
+    <ClCompile Include="Common\Main.cpp" />
+    <ClCompile Include="Lab1\Lab1Input.cpp" />
+    <ClCompile Include="Lab1\Lab1Main.cpp" />
+    <ClCompile Include="Lab1\Lab1Output.cpp" />
+    <ClCompile Include="Lab2\List.cpp" />
+    <ClCompile Include="Lab2\Lab2Main.cpp" />
+    <ClCompile Include="Lab3\CircleBuffer.cpp" />
+    <ClCompile Include="Lab3\CircleBufferQueue.cpp" />
+    <ClCompile Include="Lab3\Lab3Main.cpp" />
+    <ClCompile Include="Lab3\Lab3Output.cpp" />
+    <ClCompile Include="Lab3\RingBuffer.cpp" />
+    <ClCompile Include="Lab3\RingBufferQueue.cpp" />
+    <ClCompile Include="Lab3\Stack.cpp" />
+    <ClCompile Include="Lab3\StackQueue.cpp" />
+    <ClCompile Include="Lab4\Dictionary.cpp" />
+    <ClCompile Include="Lab4\HashTable.cpp" />
+    <ClCompile Include="Lab4\Lab4Main.cpp" />
+    <ClCompile Include="Lab4\Lab4Menu.cpp" />
+    <ClCompile Include="Lab4\Lab4Output.cpp" />
+    <ClCompile Include="Lab5\BinaryTree.cpp" />
+    <ClCompile Include="Lab5\Lab5Main.cpp" />
+    <ClCompile Include="Lab5\Lab5Menu.cpp" />
+    <ClCompile Include="Lab5\Lab5Output.cpp" />
+    <ClCompile Include="Lab5\Treap.cpp" />
+    <ClCompile Include="Lab6\AVLTree.cpp" />
+    <ClCompile Include="Lab6\Lab6Main.cpp" />
+    <ClCompile Include="Lab6\Lab6Menu.cpp" />
+    <ClCompile Include="Lab6\Node.cpp" />
+    <ClCompile Include="Lab6\Lab6Output.cpp" />
+    <ClCompile Include="Lab6\RedBlackTree.cpp" />
+    <ClCompile Include="Menus\MainMenu.cpp" />
+    <ClCompile Include="PrintMainMenu.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
